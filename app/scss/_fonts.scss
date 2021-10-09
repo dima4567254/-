@@ -1,4 +1,43 @@
 
+@font-face {
+    font-family: 'SFProDisplay';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('./fonts/SFProDisplay-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('./fonts/SFProDisplay-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'spaceagecyrillic';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+        url('./fonts/spaceagecyrillic-regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+
+
+
 /*
 @font-face {
     font-family: 'DMSans';
@@ -7,6 +46,8 @@
     src: url('./fonts/DMSans-Bold.woff2') format('woff2'), url('./fonts/DMSans-Bold.woff') format('woff');
     font-display: swap;
 }*/
+
+
 
 
 /*100 - thin
