@@ -4,10 +4,12 @@ body {
 }
 
 body {
-    font-size: 16px;/*!*/
+    font-size: 16px;
+    /*!*/
     line-height: 1;
     color: $white;
     font-family: $SFPro;
+    font-weight: 400;
     letter-spacing: 0.3px;
     display: flex;
     flex-direction: column;
@@ -24,6 +26,7 @@ body {
     white-space: nowrap;
     border: 0;
 }
+
 /*
 .title {
     @extend %title;
@@ -37,4 +40,28 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.6;
+
+    transition: color 0.5s;
+
+    &:focus {
+        color: $green;
+    }
+
+    &:hover {
+        color: $red;
+    }
+
+    &:active {
+        color: $active;
+    }
 }

@@ -6,17 +6,23 @@
 
 .header {
 
-    background-image: url('../images/astronaut-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /*  background: rgba(36, 33, 33, 0.5);*/
+    background-color: transparent;
+
+    
 }
 
 
 .menu {
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 80px;display: flex;
+        justify-content: space-between;
+        align-items: center;
+
 
     &__btn {
         display: none
@@ -24,7 +30,7 @@
 
     &__items {
         display: flex;
-        
+
     }
 
     &__item {
@@ -39,7 +45,6 @@
         font-size: 18px;
         transition: color 0.5s;
         line-height: 1.1;
-        font-weight: 400;
         text-transform: uppercase;
 
         &:focus {
@@ -61,6 +66,57 @@
         line-height: 1.1;
         /*подумать как подругому*/
     }
+}
+
+.intro {
+  background-image: url('../images/astronaut-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    &__wraper {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+         
+     
+
+    }
+
+    &__text {}
+
+    &__text span {
+        font-size: 110px;
+        letter-spacing: 1px;
+        max-width: 600px;
+        font-family: $space;
+        display: block;
+        margin-bottom: 20px;
+
+    }
+
+    &__text p {
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-family: $SFPro;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__btn {
+        padding: 15px 136px;
+    }
+
+    &__box {}
+
+
 }
 
 
