@@ -5,24 +5,20 @@
 @import 'libs';
 
 .header {
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     /*  background: rgba(36, 33, 33, 0.5);*/
-    background-color: transparent;
-
-    
+    background-color: $blue;
 }
 
-
 .menu {
-    padding-top: 80px;display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__btn {
         display: none
@@ -30,15 +26,12 @@
 
     &__items {
         display: flex;
-
     }
 
     &__item {
         &:not(:last-child) {
             margin-right: 35px;
         }
-
-
     }
 
     &__link {
@@ -58,139 +51,290 @@
         &:active {
             color: $active;
         }
+
+        &--active {
+            color: $red;
+        }
     }
 
     &__tel {
         margin-right: 190px;
         font-size: 24px;
         line-height: 1.1;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+
         /*подумать как подругому*/
     }
 }
 
 .intro {
-  background-image: url('../images/astronaut-bg.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+    background-image: url('../images/astronaut-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
 
     &__wraper {
+        display: flex;
+    }
+
+    &__inner {
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-         
-     
-
+        max-width: 600px;
     }
 
-    &__text {}
+    &__text {
+        font-family: $space;
+        font-size: 60px;
+    }
 
     &__text span {
         font-size: 110px;
         letter-spacing: 1px;
-        max-width: 600px;
-        font-family: $space;
         display: block;
         margin-bottom: 20px;
-
     }
 
     &__text p {
         margin-bottom: 50px;
         font-size: 24px;
-        font-family: $SFPro;
+        font-family: $Roboto;
 
         &:not(:last-child) {
             margin-right: 30px;
         }
     }
 
-    &__inner {
+    &__box {
         display: flex;
+        letter-spacing: -0.5px;
     }
 
     &__btn {
-        padding: 15px 136px;
+        padding: 15px 125px;
     }
 
-    &__box {}
-
-
-}
-
-
-
-
-/*медия всегда должны быть в низу */
-
-
-/*
-
-&__link {
-    color: $title;
-    font-family: $;
-    font-size: 15px;
-    line-height: 1;
-    font-weight: 700;
-    outline-color: #000000;
-    outline-offset: 5px;
-    transition: color 0.5s;
-    &:focus {
-        color: $green;
+    &__info {
+        display: inline-flex;
+        justify-content: flex-end;
+        margin-top: auto;
+        margin-bottom: 115px;
+        margin-left: auto;
+        line-height: 1.3;
     }
 
-    &:hover {
-        color: $ac;
-    }
+    &__info p {
+        max-width: 200px;
 
-    &--active {
-        color: $ac;
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
     }
 }
 
-*/
-
-/*.video {
-    height: 425px;
-    max-width: 1185px;
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    position: relative;
-    opacity: 1;
-    transition: opacity 0.7s,
-        border 0.5s;
-    max-width: 100%;
+.about {
+    background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 
 
-    &:focus {
-        outline: solid $ac;
+
+    &__inner {
+        background: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%);
     }
 
-    &:hover {
-        opacity: 0.4;
-        border: 2px solid $black;
+    &__item {
+        padding: 75px 0;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.1;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
     }
 
-    &:active {
-        color: $active;
+    &__title {
+        font-family: $space;
+        font-size: 48px;
+        margin-bottom: 105px;
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-image: url('../images/play.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100px;
-        width: 100px;
+    &__inner {}
+
+    &__img {
+
+        width: 500px;
+        height: 540px;
+        object-fit: cover;
+
+        &--origin {
+            height: 700px;
+        }
+
+        &--virgin {
+            height: 575px;
+        }
+
     }
-}*/
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    &__smalltext {
+        font-size: 12px;
+        color: $blue;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        line-height: 1.1;
+    }
+
+    &__text p {
+        max-width: 165px;
+        font-size: 16px;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    &__table {
+        margin-bottom: 55px;
+        border-collapse: collapse;
+
+        &--mb {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tr {
+
+        border: 1px solid $white;
+        border-left: none;
+        border-right: none;
+
+    }
+
+    .about__tr+.about__tr {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+
+    &__td {
+        padding: 10px 30px 10px 0;
+    }
+
+    &__td span {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        display: block;
+    }
+
+    &__caption {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-top: 20px;
+        caption-side: bottom;
+        text-align: left;
+        margin-bottom: 50px;
+
+    }
+
+    &__btn {
+        padding: 20px 45px;
+    }
+}
+
+
+.how-it-goes {
+    padding: 75px 0;
+    background-image: url('../images/how-it-goes.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 100px;
+        max-width: 576px;
+    }
+
+    &__box {
+        text-align: center;
+    }
+
+    &__box text,
+    &__box circle {
+        cursor: pointer;
+        transition: color 0.5s;
+        font-size: 18px;
+
+    }
+
+    .how-it-goes__box g:hover circle {
+        /*!!! оптимизировать*/
+        fill: $blue;
+        r: 20;
+        font-size: 36px;
+    }
+
+    .how-it-goes__box g:hover text {
+        fill: $blue;
+        font-size: 36px;
+
+    }
+
+    .how-it-goes__box g:hover foreignObject p {
+        color: $blue;
+        font-size: 22px;
+    }
+
+    &__foreignobject {
+        text-align: right;
+    }
+
+    foreignObject {
+        text-align: left;
+    }
+
+    
+}
+
+
+
+
+/*g &:hover text,
+        g &:hover circle {
+            fill: $blue;
+            r: 20;
+        }*/
 
 @import 'media';
