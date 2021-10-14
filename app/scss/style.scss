@@ -15,7 +15,7 @@
 }
 
 .menu {
-    padding-top: 80px;
+    padding: 80px 0 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,8 +57,13 @@
         }
     }
 
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
     &__tel {
-        margin-right: 190px;
+        margin-right: 20px;
         font-size: 24px;
         line-height: 1.1;
         transition: color 0.5s;
@@ -77,9 +82,30 @@
 
         /*подумать как подругому*/
     }
+
+    &__button {
+        margin-right: 135px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
 }
 
 .intro {
+    padding-top: 120px;
     background-image: url('../images/astronaut-bg.jpg');
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -147,6 +173,7 @@
 }
 
 .about {
+    padding: 80px 0;
     background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +187,7 @@
 
     &__item {
         padding: 75px 0;
+        /*!!! посмотреть как эти отступы делали в видио*/
         display: flex;
         justify-content: space-between;
         line-height: 1.1;
@@ -276,7 +304,7 @@
 
 
 .how-it-goes {
-    padding: 75px 0;
+    padding: 75px 0 75px;
     background-image: url('../images/how-it-goes.jpg');
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -315,6 +343,7 @@
     .how-it-goes__box g:hover foreignObject p {
         color: $blue;
         font-size: 22px;
+        cursor: pointer;
     }
 
     &__foreignobject {
@@ -324,17 +353,42 @@
     foreignObject {
         text-align: left;
     }
-
-    
 }
 
+.hurry-up-to-book {
+    padding-top: 100px;
+    background-image: url('../images/hurry-up-to-book.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 914px;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
 
+    }
 
-/*g &:hover text,
-        g &:hover circle {
-            fill: $blue;
-            r: 20;
-        }*/
+    &__title {
+        /*lh 1*/
+        max-width: 576px;
+    }
+
+    &__text {
+        display: flex;
+
+    }
+
+    &__text p {
+        max-width: 165px;
+        font-size: 14px;
+        line-height: 1.1;
+
+        &:not(:last-child) {
+            margin-right: 55px;
+        }
+    }
+}
+
 
 @import 'media';
