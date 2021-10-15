@@ -173,13 +173,14 @@
 }
 
 .about {
-    
+
     background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    &__inner {padding: 80px 0;
+    &__inner {
+        padding: 80px 0;
         background: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%);
     }
 
@@ -356,13 +357,15 @@
 .hurry-up-to-book {
     background-image: url('../images/hurry-up-to-book.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
-    min-height: 914px;
+    min-height: 100vh;
+
     &__wraper {
         padding-top: 100px;
         background: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%);
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -381,11 +384,249 @@
         max-width: 165px;
         font-size: 14px;
         line-height: 1.1;
+
         &:not(:last-child) {
             margin-right: 55px;
         }
     }
 }
+
+.description {
+
+    background-image: url('../images/specials.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.specials {
+    padding: 75px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 100px;
+        max-width: 470px;
+    }
+
+    &__item {
+        max-width: 500px;
+    }
+
+    &__text {
+        height: 400px;
+        padding: 40px 70px;
+        border: 1px solid $white;
+        margin-bottom: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+
+    }
+
+    &__text p {
+        font-size: 24px;
+        line-height: 1.1;
+        max-width: 210px;
+        margin: 0 auto 110px;
+    }
+
+    &__text p span+&__text {
+        color: $red;
+    }
+
+    &__smalltext {
+        margin-bottom: 15px;
+        text-align: end;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 6px;
+            height: 1px;
+            width: 68px;
+            transform: rotate(17deg);
+            background-color: red;
+        }
+    }
+
+    &__bigtext {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    &__button {
+        padding: 20px 140px;
+    }
+
+    &__prise p {
+        font-size: 48px;
+        line-height: 1.1;
+
+        &:first-child {
+            margin-bottom: 15px;
+            text-align: end;
+            position: relative;
+            font-size: 14px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                right: 6px;
+                height: 1px;
+                width: 68px;
+                transform: rotate(17deg);
+                background-color: red;
+            }
+        }
+
+        &:nth-child(2) {}
+    }
+}
+
+.services {
+    padding: 75px 0;
+
+    &__title {
+        margin-bottom: 100px;
+        max-width: 600px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 1.2;
+        max-width: 620px;
+    }
+
+    &__text span {
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    &__text p {
+        margin-bottom: 10px;
+    }
+
+    &__text p svg {
+        margin-right: 15px;
+    }
+
+    &__info {
+        padding-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__prise {
+        font-size: 12px;
+        line-height: 1.1;
+        color: $silver;
+    }
+
+    &__buttons {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -128px;
+            right: 0;
+            height: 150px;
+            width: 192px;
+            background-image: url('../images/big-robot.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__button {
+        padding: 20px 125px;
+        display: block;
+        line-height: 1.1;
+        font-size: 18px;
+
+        &--button {
+            padding: 20px 195px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.slider {
+
+
+    &__items {
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        position: relative;
+        border: 1px solid $white;
+        padding: 100px 205px 100px 195px;
+    }
+
+    &__ing {
+        width: 800px;
+        height: 450px;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    &__text p {
+
+        font-family: $space;
+        font-size: 24px;
+        line-height: 2.1;
+
+
+    }
+
+    .slick-next,
+    .slick-prev {
+        width: 100px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 315px;
+        z-index: 100;
+    }
+
+    .slick-next {
+        right: 50px;
+    }
+
+    .slick-prev {
+        left: 50px;
+    }
+}
+
+
+
+
+
+
 
 
 @import 'media';

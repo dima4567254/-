@@ -14,7 +14,8 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "imagemin": "^7.0.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "gulp-autoprefixer": "^7.0.1",
@@ -22,5 +23,13 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dima4567254/-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dima4567254/-/issues"
+  },
+  "homepage": "https://github.com/dima4567254/-#readme",
   "description": ""
 }
