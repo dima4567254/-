@@ -15,33 +15,33 @@
 
     <header class="header">
         <div class="container">
-            <nav class="menu">
+            <nav class="menu__header menu">
                 <button class="menu__btn" type="button">
                     <span></span>
                     <span class="sr-only">open menu</span>
                 </button>
-                <ul class="menu__items">
-                    <li class="menu__item">
+                <ul class=" menu__items-header">
+                    <li class=" menu__item-header">
                         <a class="menu__link menu__link--active" href="#">
                             o нас
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class=" menu__item-header">
                         <a class="menu__link" href="#service">
                             стоимость
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class=" menu__item-header">
                         <a class="menu__link" href="#collections">
                             доп. услуги
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item-header">
                         <a class="menu__link" href="#products">
                             гарантии
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item-header">
                         <a class="menu__link" href="#about">
                             новости
                         </a>
@@ -529,6 +529,7 @@
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="10" cy="10" r="10" fill="white" />
                                     </svg>
+                                    <span class="sr-only">!!!</span>
                                     магнит на холодильник в подарок
                                 </p>
                             </div>
@@ -546,7 +547,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="slider">
+                </div>
+
+                <div class="slider">
+                    <div class="container">
                         <ul class="slider__items">
                             <li class="slider__content">
                                 <img class="slider__ing" src="images/slider.jpg" alt="command">
@@ -554,12 +558,10 @@
 
                             <li class="slider__content">
                                 <img class="slider__ing" src="images/slider.jpg" alt="command">
-
                             </li>
 
                             <li class="slider__content">
                                 <img class="slider__ing" src="images/slider.jpg" alt="command">
-
                             </li>
                         </ul>
                         <div class="slider__text">
@@ -569,43 +571,137 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__contacts">
+                        <div class="contacts__title title">
+                            Контакты
+                        </div>
+
+                        <div class="contacts__text">
+                            <p> Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!</p>
+
+                        </div>
+                        <form class="contacts__form">
+                            <label class="sr-only" for="full-name">
+                                ФИО
+                            </label>
+                            <input class="contacts__name" id="name" type="text" name="full-name" placeholder="ФИО"
+                                required oninvalid="this.setCustomValidity('Введите имя, фамилия, отчество.')">
+                            <label class="sr-only" for="growth-name">
+                                Имя ребенка или внука (на всякий случай)
+                            </label>
+                            <input class="contacts__growth" id="growth" type="text" name="growth-name"
+                                placeholder="Имя ребенка или внука (на всякий случай)" required
+                                oninvalid="this.setCustomValidity('Введите имя!')">
+                            <label class="sr-only" for="tel">
+                                Телефон
+                            </label>
+                            <input class="contacts__tel" id="tel-input" type="tel" name="tel" placeholder="Телефон"
+                                required oninvalid="this.setCustomValidity('введите телефон!')">
+                            <button class="contacts__btn btn" type="submit">
+                                забронировать полет
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contacts__guarantees">
+                        <div class="contacts__title title">
+                            Гарантии
+                        </div>
+                        <div class="contacts__text contacts__text--images">
+                            <p>
+                                Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не было тебя!
+                                Будь первым! Колонизируй Марс!<br>
+                                Илон Маск
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
-
+<!--проверить sr only-->
     <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__text">
+                    <p>
+                        Служба поддержки работает межгалактично и суборбитально
+                    </p>
+                    <p>
+                        График приема посетителей строго по записи
+                    </p>
+                </div>
+                <nav class="menu__footer menu">
+                    <ul class="menu__items menu__items-footer">
+                        <li class="menu__item menu__item-footer">
+                            <a class="menu__link " href="#">
+                                o нас
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item-footer">
+                            <a class="menu__link" href="#service"><!--!!!-->
+                                стоимость
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item-footer">
+                            <a class="menu__link" href="#collections">
+                                доп. услуги
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item-footer">
+                            <a class="menu__link" href="#products">
+                                гарантии
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item-footer">
+                            <a class="menu__link" href="#about">
+                                новости
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:spacex.com">
+                                spacex.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:blueorigin.com">
+                                blueorigin.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:virgingalactic.com">
+                                virgingalactic.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:080000000000">
+                                0 800 000 000 00
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                МКС
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </footer>
 
 
-    <!--
-<a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
-    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-    <span class="sr-only">play video</span>
-</a>
--->
 
-    <!--
-  <form class="footer-top__form">
-      <label class="sr-only" for="email">
-          Enter your email
-      </label>
-      <input class="footer-top__input" id="email-input" type="email" name="email" placeholder="Your Email" required
-          oninvalid="this.setCustomValidity('fill in this field!')">
-      <button class="footer-top__btn" type="submit">
-          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
-              <image id="send" width="20" height="17"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
-          </svg>
-          <span class="sr-only">send message button</span>
-      </button>
-  </form>
-
--->
     <script src="js/main.min.js"></script>
 </body>
 

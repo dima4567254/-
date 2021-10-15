@@ -15,22 +15,39 @@
 }
 
 .menu {
-    padding: 80px 0 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__header {
+        padding: 80px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     &__btn {
         display: none
     }
 
-    &__items {
+    &__items-header {
         display: flex;
     }
 
-    &__item {
+
+    &__item-header {
         &:not(:last-child) {
             margin-right: 35px;
+        }
+    }
+
+    &__items-footer {
+        display: block;
+        margin-right: 100px;
+
+    }
+
+
+    &__item-footer {
+        &:not(:last-child) {
+            margin-bottom: 20px;
         }
     }
 
@@ -101,6 +118,11 @@
         &:active {
             color: $active;
         }
+    }
+
+    &__footer {
+        display: flex;
+
     }
 }
 
@@ -425,8 +447,6 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-
-
     }
 
     &__text p {
@@ -493,7 +513,9 @@
 }
 
 .services {
-    padding: 75px 0;
+
+
+    padding: 75px 0 0px;
 
     &__title {
         margin-bottom: 100px;
@@ -570,7 +592,8 @@
 }
 
 .slider {
-
+    background: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%);
+    padding-bottom: 75px;
 
     &__items {
         margin-bottom: 50px;
@@ -621,6 +644,143 @@
         left: 50px;
     }
 }
+
+.contacts {
+    padding: 75px 0;
+    background-image: url('../images/contacts.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {}
+
+    &__title {
+        margin-bottom: 50px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__text {
+        margin-bottom: 105px;
+        font-size: 24px;
+        line-height: 1.2;
+        position: relative;
+        max-width: 600px;
+
+
+        &--images {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 140px;
+                right: 0;
+                height: 400px;
+                width: 400px;
+                background-image: url('../images/ilon.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__form {
+        max-width: 500px;
+    }
+
+    &__tel,
+    &__growth,
+    &__name {
+        padding: 20px 20px 20px 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        display: block;
+        width: 100%;
+
+        &::placeholder {
+            color: white;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+
+    &__tel {
+        margin-bottom: 70px;
+    }
+
+    &__btn {
+        padding: 20px 135px;
+        font-size: 18px;
+    }
+
+    &__name,
+    &__growth {
+        margin-bottom: 30px;
+    }
+}
+
+.footer {
+
+    background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    &__inner {
+        padding: 100px 0 150px 600px;
+        display: flex;
+
+    }
+
+
+    &__text {
+        margin-right: 55px;
+    }
+
+    &__text p {
+        max-width: 165px;
+        font-family: $Roboto;
+        font-size: 16px;
+        line-height: 1.1;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        font-family: $Roboto;
+    }
+
+
+}
+
+
+
+
 
 
 
