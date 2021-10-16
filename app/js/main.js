@@ -30,4 +30,11 @@ $(function name(params) {
         prevArrow: '<button type="button"class="slick-prev"><img class="prev" src="images/left.svg" alt=""></button>',
         nextArrow: '<button type="button"class="slick-next"><img class="next" src="images/right.svg" alt=""></button>'
     });
+
+    $('.menu__btn').on('click', function () {
+        $('.menu__items').toggleClass('menu__items--active');
+    });
+    $('.menu__btn').on('click', function () {
+        $('.menu__btn').toggleClass('active');
+    });
 });

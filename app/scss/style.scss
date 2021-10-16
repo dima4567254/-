@@ -11,28 +11,29 @@
     right: 0;
     z-index: 999;
     /*  background: rgba(36, 33, 33, 0.5);*/
-    background-color: $blue;
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-color: $title;
 }
 
-.menu {
-    &__header {
-        padding: 80px 0 20px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
+
+.menu {
+    padding: 80px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__btn {
         display: none
     }
 
-    &__items-header {
+    &__items {
         display: flex;
     }
 
 
-    &__item-header {
+    &__item {
         &:not(:last-child) {
             margin-right: 35px;
         }
@@ -127,11 +128,13 @@
 }
 
 .intro {
-    padding-top: 120px;
+    
     background-image: url('../images/astronaut-bg.jpg');
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position:top center;
     background-size: cover;
+    height: 100vh;
+
 
     &__wraper {
         display: flex;
@@ -145,31 +148,31 @@
         max-width: 600px;
     }
 
-    &__text {
+    &__title {
         font-family: $space;
         font-size: 60px;
     }
 
-    &__text span {
+    &__title span {
         font-size: 110px;
         letter-spacing: 1px;
         display: block;
         margin-bottom: 20px;
     }
 
-    &__text p {
-        margin-bottom: 50px;
-        font-size: 24px;
-        font-family: $Roboto;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
     &__box {
         display: flex;
         letter-spacing: -0.5px;
+    }
+
+    &__box p { 
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-family: $Roboto;
+        line-height: 1.1;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
     &__btn {
@@ -414,7 +417,6 @@
 }
 
 .description {
-
     background-image: url('../images/specials.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -424,7 +426,7 @@
 .specials {
     padding: 75px 0;
 
-    &__inner {
+    &__wraper {
         display: flex;
         justify-content: space-between;
     }
@@ -438,52 +440,27 @@
         max-width: 500px;
     }
 
-    &__text {
-        height: 400px;
-        padding: 40px 70px;
+    &__inner {
         border: 1px solid $white;
-        margin-bottom: 25px;
+        height: 400px;
         text-align: center;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        padding: 40px 70px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-bottom: 110px;
     }
 
     &__text p {
         font-size: 24px;
         line-height: 1.1;
-        max-width: 210px;
-        margin: 0 auto 110px;
+        max-width: 220px;
+        margin: 0 auto;
     }
 
-    &__text p span+&__text {
+    &__color {
         color: $red;
-    }
-
-    &__smalltext {
-        margin-bottom: 15px;
-        text-align: end;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 4px;
-            right: 6px;
-            height: 1px;
-            width: 68px;
-            transform: rotate(17deg);
-            background-color: red;
-        }
-    }
-
-    &__bigtext {
-        font-size: 48px;
-        line-height: 1.1;
-    }
-
-    &__button {
-        padding: 20px 140px;
     }
 
     &__prise p {
@@ -499,22 +476,23 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: 4px;
-                right: 6px;
+                top: 5px;
+                right: -3px;
                 height: 1px;
                 width: 68px;
                 transform: rotate(17deg);
                 background-color: red;
             }
         }
+    }
 
-        &:nth-child(2) {}
+    &__button {
+        padding: 20px 135px;
+        font-size: 18px;
     }
 }
 
 .services {
-
-
     padding: 75px 0 0px;
 
     &__title {
@@ -658,7 +636,7 @@
         justify-content: space-between;
     }
 
-    &__contacts {}
+
 
     &__title {
         margin-bottom: 50px;
@@ -736,18 +714,18 @@
 }
 
 .footer {
-
-    background-image: url('../images/footer.jpg');
+    padding: 100px 0 150px 0px;
+    background-image: url('../images/footer-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    width: 100%;
+
 
     &__inner {
-        padding: 100px 0 150px 600px;
+        justify-content: flex-end;
         display: flex;
-
     }
-
 
     &__text {
         margin-right: 55px;
@@ -764,6 +742,12 @@
         }
     }
 
+    &__items {
+        &:not(:last-child) {
+            margin-right: 100px;
+        }
+    }
+
     &__item {
         margin-bottom: 20px;
     }
@@ -773,6 +757,19 @@
         line-height: 1.1;
         text-transform: uppercase;
         font-family: $Roboto;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
     }
 
 

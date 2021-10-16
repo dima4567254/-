@@ -1,18 +1,17 @@
-@media (max-width: 1800px) {}
 /*--------------------------------------------------------------------------------*/
-@media (max-width: 1200px) {}
-/*--------------------------------------------------------------------------------*/
-@media (max-width: 992px) {}
-/*--------------------------------------------------------------------------------*/
-@media (max-width: 768px) {}
-/*--------------------------------------------------------------------------------*/
-@media (max-width: 576px) {}
-
-/*
-меню
-.logo {
-    z-index: 10;
+@media (max-width: 1230px) {
+    .menu {
+        &__button {
+            margin-right: 0px;
+        }
+    }
 }
+
+/*--------------------------------------------------------------------------------*/
+@media (max-width: 992px) {
+    .logo {
+        z-index: 10;
+    }
 
     .menu {
         padding: 40px 0 15px;
@@ -35,6 +34,7 @@
             transition: transform 1s;
             padding: 100px 0 70px;
             z-index: 1;
+            color: $black;
 
             &.menu__items--active {
                 transform: translateY(0%);
@@ -44,28 +44,18 @@
         &__item {
             width: 100%;
             text-align: center;
-
-            &::before {
-                display: none;
-            }
-
-            &::after {
-                display: none;
-            }
+            margin-bottom: 20px;
 
             &:not(:last-child) {
+                /**/
                 margin-right: 0px;
 
             }
         }
 
-        &__nav {
-            margin-left: auto;
-        }
 
         &__btn {
             order: 1;
-            margin-left: 40px;
             width: 30px;
             height: 22px;
             position: relative;
@@ -80,7 +70,7 @@
             span {
                 height: 3px;
                 width: 100%;
-                background-color: #000000;
+                background-color: $white;
             }
 
             &::before,
@@ -89,7 +79,7 @@
                 content: '';
                 height: 3px;
                 width: 100%;
-                background-color: #000000;
+                background-color: $white;
             }
 
             &::before {
@@ -109,11 +99,27 @@
         .menu__btn.active:before {
             transform: rotate(45deg);
             top: 9px;
+            background-color: $black;
         }
 
         .menu__btn.active::after {
             transform: rotate(-45deg);
             bottom: 9px;
+            background-color: $black;
         }
+
+       
     }
+}
+
+
+/*--------------------------------------------------------------------------------*/
+@media (max-width: 768px) {}
+
+/*--------------------------------------------------------------------------------*/
+@media (max-width: 576px) {}
+
+/*
+меню
+
 */

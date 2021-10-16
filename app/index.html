@@ -12,36 +12,35 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
-            <nav class="menu__header menu">
+            <nav class=" menu">
                 <button class="menu__btn" type="button">
                     <span></span>
                     <span class="sr-only">open menu</span>
                 </button>
-                <ul class=" menu__items-header">
-                    <li class=" menu__item-header">
+                <ul class=" menu__items">
+                    <li class=" menu__item">
                         <a class="menu__link menu__link--active" href="#">
                             o нас
                         </a>
                     </li>
-                    <li class=" menu__item-header">
+                    <li class=" menu__item">
                         <a class="menu__link" href="#service">
                             стоимость
                         </a>
                     </li>
-                    <li class=" menu__item-header">
+                    <li class=" menu__item">
                         <a class="menu__link" href="#collections">
                             доп. услуги
                         </a>
                     </li>
-                    <li class="menu__item-header">
+                    <li class="menu__item">
                         <a class="menu__link" href="#products">
                             гарантии
                         </a>
                     </li>
-                    <li class="menu__item-header">
+                    <li class="menu__item">
                         <a class="menu__link" href="#about">
                             новости
                         </a>
@@ -52,39 +51,32 @@
                         <!--попробывать сделать списком -->
                         0 800 000 000 00
                     </a>
-
                     <button class="menu__button" type="button">
                         <img class="menu__img" src="images/robot.png" alt="robot">
                     </button>
-
                 </div>
             </nav>
         </div>
-
     </header>
+
     <main class="main">
         <section class="intro">
             <div class="container">
                 <div class="intro__wraper">
                     <div class="intro__inner">
-                        <h1></h1>
-                        <!--!!!-->
-                        <div class="intro__text">
-                            космический
+                        <h1 class="intro__title">
+                            космический 
                             <span>
                                 туризм
                             </span>
-                            <div class="intro__box">
-                                <p>Будущее уже наступило!</p>
-                                <p>Осуществи мечту детства!</p>
-                            </div>
+                        </h1>
+                        <div class="intro__box">
+                            <p>Будущее уже наступило!</p>
+                            <p>Осуществи мечту детства!</p>
                         </div>
-
-
                         <button class="intro__btn btn" type="button">
                             Хочу быть космонавтом!
                         </button>
-
                     </div>
                     <div class="intro__info">
                         <p>
@@ -101,7 +93,7 @@
                 </div>
             </div>
         </section>
-
+        <!--
         <section class="about">
             <div class="about__inner">
                 <div class="container">
@@ -388,7 +380,7 @@
                         </g>
                         <g>
                             <circle cx="236" cy="414" r="10" fill="white" />
-                            <!--тег что бы писать html в svg-->
+                            <!--тег что бы писать html в svg
                             <foreignObject class="how-it-goes__foreignobject" x="110" y="400" fill="white" width="105"
                                 height="200">
                                 <p>
@@ -420,7 +412,7 @@
         </section>
 
         <section class="hurry-up-to-book">
-            <!--!!! сократить классы-->
+            <!--!!! сократить классы
             <div class="hurry-up-to-book__wraper">
                 <div class="container">
                     <div class="hurry-up-to-book__inner">
@@ -451,35 +443,42 @@
                         Спец
                         предложения
                     </h2>
-                    <div class="specials__inner">
+                    <div class="specials__wraper">
                         <div class="specials__item">
-                            <div class="specials__text">
-                                <p>
-                                    Забронируй полет
-                                    <span>прямо сейчас</span><br>
-                                    и получи скидку
-                                    1000$
-                                </p>
-                                <div class="specials__smalltext">
-                                    250 000
-                                    <span>$</span>
+                            <div class="specials__inner">
+                                <div class="specials__text">
+                                    <p>
+                                        Забронируй полет
+                                        <span class="specials__color">прямо сейчас</span><br>
+                                        и получи скидку
+                                        1000$
+                                    </p>
                                 </div>
-                                <div class="specials__bigtext">
-                                    249 000
-                                    <span>$</span>
-                                </div>
+                                    <div class="specials__prise">
+                                        <p>
+                                            250 000
+                                            <span>$</span>
+                                        </p>
+                                        <p>
+                                            249 000
+                                            <span>$</span>
+                                        </p>
+                                    </div>
+                                
                             </div>
                             <button class="specials__button btn" type="button">
                                 забронировать полет
                             </button>
                         </div>
                         <div class="specials__item">
-                            <div class="specials__text">
-                                <p>
-                                    Приведи друга и получи
-                                    <span>скидку 10%</span>
-                                    на следующий полет, если вернешься
-                                </p>
+                            <div class="specials__inner">
+                                <div class="specials__text">
+                                    <p>
+                                        Приведи друга и получи
+                                        <span class="specials__color">скидку 10%</span>
+                                        на следующий полет, если вернешься
+                                    </p>
+                                </div>
                                 <div class="specials__prise">
                                     <p>
                                         250 000
@@ -627,7 +626,7 @@
         </section>
 
     </main>
-<!--проверить sr only-->
+    <!--проверить sr only
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -639,70 +638,69 @@
                         График приема посетителей строго по записи
                     </p>
                 </div>
-                <nav class="menu__footer menu">
-                    <ul class="menu__items menu__items-footer">
-                        <li class="menu__item menu__item-footer">
-                            <a class="menu__link " href="#">
-                                o нас
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item-footer">
-                            <a class="menu__link" href="#service"><!--!!!-->
-                                стоимость
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item-footer">
-                            <a class="menu__link" href="#collections">
-                                доп. услуги
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item-footer">
-                            <a class="menu__link" href="#products">
-                                гарантии
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item-footer">
-                            <a class="menu__link" href="#about">
-                                новости
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer__items">
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:spacex.com">
-                                spacex.com
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:blueorigin.com">
-                                blueorigin.com
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:virgingalactic.com">
-                                virgingalactic.com
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="tel:080000000000">
-                                0 800 000 000 00
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">
-                                МКС
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+
+                <ul class="footer__items">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            o нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            стоимость
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            доп. услуги
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            гарантии
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            новости
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__items">
+                    <li class="footer__item">
+                        <a class="footer__link" href="mailto:spacex.com">
+                            spacex.com
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="mailto:blueorigin.com">
+                            blueorigin.com
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="mailto:virgingalactic.com">
+                            virgingalactic.com
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="tel:080000000000">
+                            0 800 000 000 00
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            МКС
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
     </footer>
+-->
 
 
-
-    <script src="js/main.min.js"></script>
+        <script src="js/main.min.js"></script>
 </body>
 
 </html>
