@@ -128,24 +128,27 @@
 }
 
 .intro {
-    
+
     background-image: url('../images/astronaut-bg.jpg');
     background-repeat: no-repeat;
-    background-position:top center;
+    background-position: top center;
     background-size: cover;
     height: 100vh;
 
 
     &__wraper {
-        display: flex;
+        
+
+
     }
 
     &__inner {
-        display: inline-flex;
+        /*max-width: 600px;*/
+        display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        max-width: 600px;
+
     }
 
     &__title {
@@ -165,11 +168,12 @@
         letter-spacing: -0.5px;
     }
 
-    &__box p { 
+    &__box p {
         margin-bottom: 50px;
         font-size: 24px;
         font-family: $Roboto;
         line-height: 1.1;
+
         &:not(:last-child) {
             margin-right: 30px;
         }
@@ -177,14 +181,13 @@
 
     &__btn {
         padding: 15px 125px;
+        max-width: 600px;
+        margin-bottom: 110px;
     }
 
     &__info {
-        display: inline-flex;
+        display: flex;
         justify-content: flex-end;
-        margin-top: auto;
-        margin-bottom: 115px;
-        margin-left: auto;
         line-height: 1.3;
     }
 
